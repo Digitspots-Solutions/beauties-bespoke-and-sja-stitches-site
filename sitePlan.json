@@ -1,0 +1,42 @@
+{
+  "businessName": "Beauties Bespoke and SJA Stitches",
+  "industry": "Fashion and Creative Design",
+  "tone": "elegant and creative",
+  "tagline": "Where Style Meets Craftsmanship",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to Beauties Bespoke and SJA Stitches – your premier destination for exquisite fashion and creative design in Lagos. We transform fabric into art, bringing your style vision to life with precision, creativity, and passion. From bespoke tailoring to custom designs, we craft garments that celebrate your unique elegance.",
+      "imagePrompt": "Elegant Nigerian fashion studio interior with luxurious fabrics draped on mannequins, warm golden lighting, rolls of colorful African prints and premium textiles, modern sewing equipment, sophisticated and inviting atmosphere, Lagos luxury boutique aesthetic, photorealistic, high-end fashion photography style",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "At Beauties Bespoke and SJA Stitches, we are passionate about creating fashion that tells your story. Located in the heart of Kosofe, Lagos, our studio combines traditional tailoring expertise with contemporary design innovation. Every stitch, every seam, every detail is executed with meticulous care to ensure your garments fit perfectly and reflect your personal style. Whether you're preparing for a special occasion or building your everyday wardrobe, we bring decades of experience and an unwavering commitment to quality. Our team takes pride in understanding your needs, offering expert guidance, and delivering pieces that make you look and feel extraordinary.",
+      "imagePrompt": "Professional Nigerian fashion designers working with beautiful fabrics in a bright modern studio, measuring tapes and sketches visible, diverse range of African prints and contemporary materials, warm natural lighting, creative workspace atmosphere, Lagos creative scene, documentary style photography",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "**Bespoke Tailoring** – Custom-fitted garments designed specifically for your body and style preferences. From traditional attire to modern fashion, we create pieces that fit like a dream.\n\n**Creative Design Consultation** – Work directly with our designers to bring your fashion vision to life. We guide you through fabric selection, style choices, and design elements.\n\n**Wedding & Special Occasions** – Make your special day unforgettable with stunning custom designs for weddings, engagements, birthdays, and celebrations.\n\n**Corporate & Casual Wear** – Professional attire that commands respect and casual pieces that showcase your personality, all tailored to perfection.\n\n**Alterations & Repairs** – Expert alterations to ensure your existing garments fit flawlessly, plus professional repairs that restore your favorite pieces.\n\n**Custom Embroidery & Embellishments** – Add unique touches with custom embroidery, beading, and decorative elements that make your garments truly one-of-a-kind.",
+      "imagePrompt": "Collage of beautiful Nigerian fashion pieces including traditional aso-ebi, modern corporate wear, elegant evening gowns, and casual contemporary designs, displayed on dress forms and mannequins, vibrant colors, professional fashion photography, Lagos style diversity, clean studio background",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Get In Touch",
+      "copy": "Ready to create something beautiful? Visit our studio or reach out to discuss your fashion needs. We're here to bring your style vision to life.\n\n**Visit Our Studio:**\n11, Oyedele Ogunniyi Street, Anthony, Kosofe, Lagos\n\n**Call or WhatsApp:**\n+234 802 891 1433\n\nOur experienced team is ready to welcome you and begin crafting garments that celebrate your unique beauty. Whether you have a clear vision or need creative guidance, Beauties Bespoke and SJA Stitches is your partner in elegant, personalized fashion.",
+      "imagePrompt": "Welcoming Nigerian fashion boutique storefront in Anthony Lagos, clean signage, inviting entrance with fabric displays visible through windows, professional yet warm atmosphere, daytime lighting, urban Lagos street context, approachable and elegant aesthetic, photorealistic architectural photography",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 802 891 1433",
+    "email": "",
+    "address": "11, Oyedele Ogunniyi Street, Anthony, Kosofe, Lagos",
+    "whatsapp": "https://wa.me/2348028911433"
+  }
+}
