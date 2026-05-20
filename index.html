@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauties Bespoke and SJA Stitches - Where Style Meets Craftsmanship</title>
+    <title>Bepmop Cakes Poultry Tech Limited - Nourishing Nigeria with Quality Foods and Innovation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #050404;
-            --color-accent: #93ff34;
-            --color-bg: #F8F8F8;
-            --color-text: #0A0A0A;
-            --color-surface: #212121;
-            --color-secondary-accent: #f8100a;
-            --font-display: 'Bebas Neue', sans-serif;
-            --font-body: 'Outfit', sans-serif;
-            --border-radius: 0px;
+            --color-primary: #223926;
+            --color-accent: #47a522;
+            --color-bg: #F2F8EE;
+            --color-text: #1A3020;
+            --color-surface: #273f2a;
+            --color-secondary-accent: #ce5e28;
+            --font-display: 'Fraunces', serif;
+            --font-body: 'Source Sans 3', sans-serif;
+            --border-radius: 18px;
         }
 
         * {
@@ -35,7 +35,12 @@
             color: var(--color-text);
             background-color: var(--color-bg);
             line-height: 1.6;
-            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
         }
 
         @keyframes fadeUp {
@@ -50,6 +55,7 @@
         }
 
         section {
+            padding: 80px 20px;
             animation: fadeUp 0.6s ease forwards;
         }
 
@@ -58,21 +64,25 @@
         section:nth-child(3) { animation-delay: 0.2s; }
         section:nth-child(4) { animation-delay: 0.3s; }
         section:nth-child(5) { animation-delay: 0.4s; }
+        section:nth-child(6) { animation-delay: 0.5s; }
 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
         nav {
             position: sticky;
             top: 0;
-            background: rgba(248, 248, 248, 0.9);
+            background: rgba(242, 248, 238, 0.95);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            padding: 1.2rem 2rem;
             z-index: 1000;
-            padding: 1.2rem 5%;
-            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .nav-container {
-            max-width: 1400px;
-            margin: 0 auto;
+        nav .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -80,53 +90,34 @@
 
         .logo {
             font-family: var(--font-display);
-            font-size: 1.8rem;
-            letter-spacing: 1px;
+            font-size: 1.5rem;
+            font-weight: 700;
             color: var(--color-primary);
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            gap: 2rem;
         }
 
         .nav-links a {
             text-decoration: none;
             color: var(--color-text);
-            font-weight: 500;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
+            font-weight: 600;
             transition: color 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--color-accent);
-            transition: width 0.3s ease;
         }
 
         .nav-links a:hover {
             color: var(--color-accent);
         }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
+        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
             cursor: pointer;
             gap: 4px;
-            z-index: 1001;
         }
 
         .mobile-menu-btn span {
@@ -149,6 +140,7 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
+        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
@@ -156,7 +148,7 @@
             width: 300px;
             height: calc(100vh - 70px);
             background: var(--color-bg);
-            box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -182,19 +174,22 @@
             transition: color 0.3s ease;
             display: block;
             padding: 0.5rem 0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .mobile-menu ul a:hover {
             color: var(--color-accent);
         }
 
-        .hero {
+        /* Hero Section */
+        #hero {
             position: relative;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0;
             overflow: hidden;
         }
 
@@ -204,13 +199,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
-        }
-
-        .hero-bg img {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
+            z-index: 1;
         }
 
         .hero-overlay {
@@ -226,128 +216,81 @@
         .hero-content {
             position: relative;
             z-index: 3;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 5%;
-            color: white;
+            max-width: 900px;
+            padding: 2rem;
         }
 
-        .hero h1 {
-            font-family: var(--font-display);
-            font-size: clamp(3rem, 8vw, 7rem);
-            line-height: 0.9;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        .hero-tagline {
-            font-size: clamp(1.2rem, 2.5vw, 2rem);
+        .hero-content p {
+            font-size: 1.3rem;
             margin-bottom: 2rem;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-
-        .hero p {
-            max-width: 700px;
-            font-size: 1.1rem;
-            margin-bottom: 2.5rem;
             line-height: 1.8;
         }
 
         .cta-btn {
             display: inline-block;
+            padding: 1rem 2.5rem;
             background: var(--color-accent);
-            color: var(--color-primary);
-            padding: 1rem 3rem;
+            color: white;
             text-decoration: none;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-            border: 2px solid var(--color-accent);
+            box-shadow: 0 4px 15px rgba(71, 165, 34, 0.3);
         }
 
         .cta-btn:hover {
-            background: transparent;
-            color: var(--color-accent);
-            transform: translate(2px, 2px);
-            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+            background: var(--color-secondary-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(206, 94, 40, 0.4);
         }
 
-        .about {
-            padding: 80px 5%;
-            background: var(--color-bg);
+        /* About Section */
+        #about {
+            background: white;
         }
 
-        .about-container {
-            max-width: 1400px;
-            margin: 0 auto;
+        .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
 
-        .about-image {
-            width: 100%;
-            height: 600px;
-            position: relative;
-        }
-
-        .about-image::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            left: -20px;
-            width: 100%;
-            height: 100%;
-            background: var(--color-accent);
-            z-index: 1;
-        }
-
         .about-image img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: relative;
-            z-index: 2;
-            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.15);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
-        .about-content h2 {
-            font-family: var(--font-display);
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .about-content p {
-            font-size: 1.05rem;
-            line-height: 1.9;
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--color-primary);
             margin-bottom: 1.5rem;
         }
 
-        .services {
-            padding: 80px 5%;
-            background: var(--color-surface);
-            color: white;
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--color-text);
         }
 
-        .services-container {
-            max-width: 1400px;
-            margin: 0 auto;
+        /* Services Section */
+        #services {
+            background: var(--color-bg);
         }
 
-        .services h2 {
-            font-family: var(--font-display);
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 3rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        #services h2 {
             text-align: center;
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
         }
 
         .services-grid {
@@ -357,132 +300,134 @@
         }
 
         .service-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             padding: 2rem;
-            transition: all 0.3s ease;
-            position: relative;
-            border: 2px solid transparent;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background: var(--color-accent);
-            transition: width 0.3s ease;
-            z-index: 1;
-        }
-
-        .service-card:hover::before {
-            width: 4px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .service-card:hover {
-            border-color: var(--color-accent);
-            transform: translateX(8px);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
         .service-card h3 {
-            font-family: var(--font-display);
-            font-size: 1.8rem;
+            font-size: 1.5rem;
+            color: var(--color-accent);
             margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
-            z-index: 2;
         }
 
         .service-card p {
-            line-height: 1.8;
-            position: relative;
-            z-index: 2;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--color-text);
         }
 
-        .contact {
-            padding: 80px 5%;
-            background: var(--color-bg);
+        /* Testimonials Section */
+        #testimonials {
+            background: white;
         }
 
-        .contact-container {
-            max-width: 1200px;
-            margin: 0 auto;
+        #testimonials h2 {
             text-align: center;
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
         }
 
-        .contact h2 {
-            font-family: var(--font-display);
-            font-size: clamp(2.5rem, 5vw, 4rem);
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--color-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-accent);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--color-primary);
+            font-style: normal;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--color-surface);
+            color: white;
+        }
+
+        #contact h2 {
+            text-align: center;
+            font-size: 2.5rem;
             margin-bottom: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         .contact-content {
             max-width: 800px;
-            margin: 0 auto 3rem;
-            font-size: 1.05rem;
-            line-height: 1.9;
+            margin: 0 auto;
+            text-align: center;
         }
 
-        .contact-details {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .contact-item {
-            background: var(--color-surface);
-            color: white;
-            padding: 1.5rem 2rem;
-            min-width: 280px;
-            text-align: left;
-        }
-
-        .contact-item h3 {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--color-accent);
-        }
-
-        .contact-item p, .contact-item a {
-            color: white;
-            text-decoration: none;
+        .contact-content p {
+            font-size: 1.1rem;
             line-height: 1.8;
+            margin-bottom: 2rem;
         }
 
-        .contact-item a:hover {
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info a {
             color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: white;
         }
 
         .whatsapp-btn {
             display: inline-block;
+            padding: 1rem 2.5rem;
             background: #25D366;
             color: white;
-            padding: 1rem 3rem;
             text-decoration: none;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
             transition: all 0.3s ease;
-            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-            border: 2px solid #25D366;
         }
 
         .whatsapp-btn:hover {
-            background: transparent;
-            color: #25D366;
-            transform: translate(2px, 2px);
-            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+            background: #20BA5A;
+            transform: translateY(-2px);
         }
 
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -497,26 +442,41 @@
             justify-content: center;
             font-size: 2rem;
             text-decoration: none;
-            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
-            z-index: 999;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
             transition: all 0.3s ease;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-            box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
         }
 
+        /* Footer */
         footer {
             background: var(--color-primary);
             color: white;
             text-align: center;
-            padding: 2rem 5%;
+            padding: 2rem;
         }
 
         footer p {
             font-size: 0.95rem;
-            letter-spacing: 0.5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            section {
+                padding: 60px 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .about-content {
+                gap: 3rem;
+            }
         }
 
         @media (max-width: 768px) {
@@ -528,42 +488,28 @@
                 display: flex;
             }
 
-            .hero h1 {
-                font-size: 3rem;
+            section {
+                padding: 48px 20px;
             }
 
-            .about {
-                padding: 48px 5%;
+            .hero-content h1 {
+                font-size: 2.2rem;
             }
 
-            .about-container {
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .about-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            .about-image {
-                height: 400px;
-            }
-
-            .services {
-                padding: 48px 5%;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact {
-                padding: 48px 5%;
-            }
-
-            .contact-details {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .contact-item {
-                min-width: 100%;
+            .about-text h2,
+            #services h2,
+            #testimonials h2,
+            #contact h2 {
+                font-size: 2rem;
             }
 
             .whatsapp-float {
@@ -574,26 +520,17 @@
                 right: 20px;
             }
         }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .about-container {
-                gap: 3rem;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
     </style>
 </head>
 <body>
     <nav>
-        <div class="nav-container">
-            <div class="logo">BEAUTIES BESPOKE</div>
+        <div class="container">
+            <div class="logo">Bepmop Cakes</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -609,97 +546,104 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
-    <section id="hero" class="hero">
-        <div class="hero-bg">
-            <img src="https://images.pexels.com/photos/36965151/pexels-photo-36965151.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Beauties Bespoke Fashion Studio">
-        </div>
+    <section id="hero">
+        <img src="https://images.pexels.com/photos/32123128/pexels-photo-32123128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hero" class="hero-bg">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Beauties Bespoke<br>& SJA Stitches</h1>
-            <p class="hero-tagline">Where Style Meets Craftsmanship</p>
-            <p>Welcome to Beauties Bespoke and SJA Stitches – your premier destination for exquisite fashion and creative design in Lagos. We transform fabric into art, bringing your style vision to life with precision, creativity, and passion. From bespoke tailoring to custom designs, we craft garments that celebrate your unique elegance.</p>
+            <h1>Bepmop Cakes Poultry Tech Limited</h1>
+            <p>Welcome to Bepmop Cakes Poultry Tech Limited. We're revolutionizing Nigeria's food industry with fresh, ready-to-eat meals and premium livestock feeds. From farm to table, we deliver quality, convenience, and taste that brings families together. Experience the Bepmop difference today.</p>
             <a href="#contact" class="cta-btn">Get Started</a>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="https://images.pexels.com/photos/9850430/pexels-photo-9850430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Our Fashion Design Process">
-            </div>
+    <section id="about">
+        <div class="container">
             <div class="about-content">
-                <h2>About Us</h2>
-                <p>At Beauties Bespoke and SJA Stitches, we are passionate about creating fashion that tells your story. Located in the heart of Kosofe, Lagos, our studio combines traditional tailoring expertise with contemporary design innovation. Every stitch, every seam, every detail is executed with meticulous care to ensure your garments fit perfectly and reflect your personal style.</p>
-                <p>Whether you're preparing for a special occasion or building your everyday wardrobe, we bring decades of experience and an unwavering commitment to quality. Our team takes pride in understanding your needs, offering expert guidance, and delivering pieces that make you look and feel extraordinary.</p>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/4180650/pexels-photo-4180650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Bepmop Cakes">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Bepmop Cakes Poultry Tech Limited (also known as Bepmop Cakes Livestock Foods Nigeria) is a leading FoodTech company based in Lagos, Nigeria. We specialize in producing premium ready-to-eat foods and high-quality livestock feeds that meet international standards. Our mission is to provide busy Nigerians with nutritious, delicious meals while supporting the agricultural sector with innovative feed solutions. Operating from our facility at 11, Oyedele Ogunniyi Street in Anthony, Lagos, we combine traditional Nigerian flavors with modern food technology to serve homes, offices, and farms across Kosofe and beyond. Every product from Bepmop is crafted with care, hygiene, and a commitment to excellence.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="services-container">
+    <section id="services">
+        <div class="container">
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Bespoke Tailoring</h3>
-                    <p>Custom-fitted garments designed specifically for your body and style preferences. From traditional attire to modern fashion, we create pieces that fit like a dream.</p>
+                    <h3>Ready-to-Eat Foods</h3>
+                    <p>Enjoy our delicious selection of freshly prepared Nigerian meals delivered straight to your doorstep. From breakfast to dinner, our ready-to-eat options include local favorites like jollof rice, fried rice, ofada rice with ayamase, native soups, grilled proteins, and continental dishes. Perfect for busy professionals, families, and events.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Creative Design Consultation</h3>
-                    <p>Work directly with our designers to bring your fashion vision to life. We guide you through fabric selection, style choices, and design elements.</p>
+                    <h3>Livestock Feeds</h3>
+                    <p>Our premium poultry and livestock feeds are scientifically formulated to maximize growth, health, and productivity. We supply farmers across Lagos and neighboring states with quality feed that delivers results you can measure.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Wedding & Special Occasions</h3>
-                    <p>Make your special day unforgettable with stunning custom designs for weddings, engagements, birthdays, and celebrations.</p>
+                    <h3>Bulk Catering</h3>
+                    <p>Planning an event? We cater for corporate functions, weddings, birthdays, and parties with delicious meals that leave lasting impressions.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Corporate & Casual Wear</h3>
-                    <p>Professional attire that commands respect and casual pieces that showcase your personality, all tailored to perfection.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Alterations & Repairs</h3>
-                    <p>Expert alterations to ensure your existing garments fit flawlessly, plus professional repairs that restore your favorite pieces.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Custom Embroidery & Embellishments</h3>
-                    <p>Add unique touches with custom embroidery, beading, and decorative elements that make your garments truly one-of-a-kind.</p>
+                    <h3>Consultation Services</h3>
+                    <p>Get expert advice on livestock nutrition, farm management, and food business operations from our experienced team.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <h2>Get In Touch</h2>
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Bepmop Cakes has been a lifesaver for my family. Their ready-to-eat meals taste just like homemade food, and the delivery is always on time. I highly recommend them to anyone in Lagos!"</p>
+                    <p class="testimonial-author">– Mrs. Adebisi Okon, Surulere</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"As a poultry farmer in Ikorodu, finding quality feed was always a challenge until I discovered Bepmop. My birds are healthier, they grow faster, and egg production has increased by 30%. Excellent service!"</p>
+                    <p class="testimonial-author">– Mr. Chukwudi Nnaji, Ikorodu</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"We used Bepmop Cakes for our company's end-of-year party and the feedback was amazing. The food was delicious, professionally served, and within our budget. Thank you, Bepmop!"</p>
+                    <p class="testimonial-author">– Tunde Bakare, HR Manager, Tech Solutions Ltd</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Their ofada rice and ayamase is the best I've had outside my hometown. Plus, ordering is so easy via WhatsApp. Bepmop is now my go-to for authentic Nigerian food."</p>
+                    <p class="testimonial-author">– Grace Okonkwo, Yaba</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
             <div class="contact-content">
-                <p>Ready to create something beautiful? Visit our studio or reach out to discuss your fashion needs. We're here to bring your style vision to life.</p>
-                <p>Our experienced team is ready to welcome you and begin crafting garments that celebrate your unique beauty. Whether you have a clear vision or need creative guidance, Beauties Bespoke and SJA Stitches is your partner in elegant, personalized fashion.</p>
-            </div>
-            <div class="contact-details">
-                <div class="contact-item">
-                    <h3>Visit Our Studio</h3>
-                    <p>11, Oyedele Ogunniyi Street<br>Anthony, Kosofe, Lagos</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Call or WhatsApp</h3>
-                    <p><a href="tel:+2348028911433">+234 802 891 1433</a></p>
+                <h2>Contact Us</h2>
+                <p>Ready to experience the Bepmop difference? We're here to serve you with quality foods and premium livestock feeds. Visit us, call us, or send a message on WhatsApp for instant response.</p>
+                <div class="contact-info">
+                    <p><strong>Bepmop Cakes Poultry Tech Limited</strong></p>
+                    <p>11, Oyedele Ogunniyi Street<br>Anthony, Kosofe<br>Lagos, Nigeria</p>
+                    <p>Phone: <a href="tel:+2348028911433">+234 802 891 1433</a></p>
+                    <p><strong>Business Hours:</strong><br>Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                    <p>For bulk orders, catering inquiries, or farm consultations, please call ahead to schedule an appointment. We deliver across Lagos and surrounding areas. Place your order today!</p>
+                    <a href="https://wa.me/2348028911433" class="whatsapp-btn">Chat on WhatsApp</a>
                 </div>
             </div>
-            <a href="https://wa.me/2348028911433" class="whatsapp-btn" target="_blank">Message Us on WhatsApp</a>
         </div>
     </section>
 
-    <a href="https://wa.me/2348028911433" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
-    </a>
+    <a href="https://wa.me/2348028911433" class="whatsapp-float" target="_blank">💬</a>
 
     <footer>
-        <p>&copy; 2025 Beauties Bespoke and SJA Stitches. All rights reserved.</p>
+        <p>&copy; 2025 Bepmop Cakes Poultry Tech Limited. All rights reserved.</p>
     </footer>
 
     <script>
